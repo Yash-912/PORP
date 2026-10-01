@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 
-@Import(TestcontainersConfiguration.class)
 @SpringBootTest
-class PaymentOrchestrationPlatformApplicationTests {
+@Import(TestcontainersConfiguration.class)
+class PorpApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    void contextLoads() {
+        // Verifies the Spring context starts without errors
+    }
 }
