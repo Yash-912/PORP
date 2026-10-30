@@ -18,7 +18,7 @@
 				<h3>{{quiz.name}}</h3>
 				<p>{{quiz.description}}</p>
 				<div class="card-foot">
-					<a href="/quiz/{{quiz.id}}" class="btn btn-primary" th:text="#{label.home.play}">Play</a>
+					<a href="/quiz/{{quiz.id}}" class="btn btn-primary stretched" th:text="#{label.home.play}">Play</a>
 				</div>
 			</div>
 		</div>
@@ -34,5 +34,8 @@
 	<div th:replace="fragments/angular :: angular">...</div>
 	<script type="text/javascript" src="../js/homeApp.js"
 		        th:src="@{/js/homeApp.js}"></script>
+
+	<footer th:replace="fragments/footer :: footer"></footer>
+
 </body>
 </html>

@@ -7,10 +7,15 @@
 
 	<div class="page">
 		<div class="quiz-detail">
+			<p class="eyebrow">Quiz</p>
 			<h1 th:text="${quiz.name}">Quiz</h1>
 			<p th:text="${quiz.description}">Description</p>
 			<a th:href="|/quiz/${quiz.id}/play|" th:text="#{label.selectedquiz.playbutton}" class="btn btn-lg btn-primary">Play</a>
+			<a href="/" class="sub-link">Browse all quizzes</a>
 		</div>
 	</div>
+
+	<footer th:replace="fragments/footer :: footer"></footer>
+
 </body>
 </html>

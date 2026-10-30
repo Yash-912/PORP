@@ -6,6 +6,7 @@
 	<div th:replace="fragments/header :: header">...</div>
 
 	<div class="page-medium" ng-controller="EditAnswersCtrl">
+		<a href="javascript:history.back()" class="back-link">Back to questions</a>
 		<h1 th:text="${question.text}" class="page-title">Question text</h1>
 		<p class="page-sub" th:text="#{label.editanswers.sub}">Add the possible answers and select the correct one.</p>
 
@@ -65,5 +66,8 @@
 		        th:src="@{/js/angular-drag-and-drop-lists.min.js}"></script>
 	<script type="text/javascript" src="../js/editAnswersApp.js"
 		        th:src="@{/js/editAnswersApp.js}"></script>
+
+	<footer th:replace="fragments/footer :: footer"></footer>
+
 </body>
 </html>
